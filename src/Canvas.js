@@ -8,7 +8,7 @@ import './styles/canvas.css';
 function Canvas() {
   const [color, setColor] = useState("#4C4AE2");
   const [brushSize, setBrushSize] = useState(7);
-  const [animate, setAnimate] = useState(false);
+  // const [animate, setAnimate] = useState(false);
 
   const canvasRef = useRef(null);
   const contextRef = useRef(null);
@@ -16,7 +16,7 @@ function Canvas() {
   const [isDrawing, setIsDrawing] = useState(false);
 
   const handleSetColor = (color) => {
-    setAnimate(false);
+    // setAnimate(false);
     setColor(color.hex);
   };
 
